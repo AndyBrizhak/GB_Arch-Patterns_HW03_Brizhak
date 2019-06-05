@@ -14,8 +14,20 @@ namespace GB_Arch_Patterns_HW03_Brizhak
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
+            ShapeFactory shapeFactory = new ShapeFactory();
+
+            List<IShape> shapes = new List<IShape>()
+            {  shapeFactory.CreateInstance("Square"),
+                shapeFactory.CreateInstance("Joker"),
+                shapeFactory.CreateInstance("Circle"),
+                shapeFactory.CreateInstance("Rectangle")
+            };
+
+            foreach (IShape shape in shapes) Console.WriteLine($"Автомобиль: {shape.GetType()}, {shape}");
+
         }
     }
 }
