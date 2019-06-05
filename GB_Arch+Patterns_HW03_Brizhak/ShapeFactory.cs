@@ -26,7 +26,8 @@ namespace GB_Arch_Patterns_HW03_Brizhak
 
             Type[] typesInThisAssembly = Assembly.GetExecutingAssembly().GetTypes();
 
-            //foreach (var item in typesInThisAssembly) Console.WriteLine($"---- {item.Name}");
+            foreach (var item in typesInThisAssembly) Console.WriteLine($"---- {item.Name}");
+            Console.ReadKey();
 
             foreach (Type type in typesInThisAssembly)
             {

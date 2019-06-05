@@ -26,7 +26,8 @@ namespace GB_Arch_Patterns_HW03_Brizhak
                 shapeFactory.CreateInstance("Rectangle")
             };
 
-            foreach (IShape shape in shapes) Console.WriteLine($"Автомобиль: {shape.GetType()}, {shape}");
+            foreach (IShape shape in shapes) Console.WriteLine($"Shapes: {shape.GetType()}, {shape}");
+            Console.ReadKey();
 
         }
     }
