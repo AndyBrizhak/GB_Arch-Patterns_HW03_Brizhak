@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW03_Brizhak
 {
+    /// <summary>
+    /// Геометрическая форма - круг
+    /// </summary>
     public class Сircle : IShape
     {
         public double Radius { get; set; }

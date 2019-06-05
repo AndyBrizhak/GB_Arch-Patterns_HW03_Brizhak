@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW03_Brizhak
 {
+   /// <summary>
+   /// Неизвестная геометрическая форма
+   /// </summary>
    public class UnknownShape : IShape
     {
         public string Name => "UnknownShape";

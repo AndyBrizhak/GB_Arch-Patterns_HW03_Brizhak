@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW03_Brizhak
 {
+   /// <summary>
+   /// Геометрическая форма - прямоугольник
+   /// </summary>
    public class Rectangle : IShape
     {
         public int Width { get; set; }
