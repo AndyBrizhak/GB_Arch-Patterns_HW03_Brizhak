@@ -13,7 +13,7 @@ namespace GB_Arch_Patterns_HW03_Brizhak
     {
         public double Radius { get; set; }
 
-        public string Name => "Circle";
+        public string Name => "Круг";
 
         public  double CalculateArea() => Math.PI*Math.Pow(Radius,2);
         

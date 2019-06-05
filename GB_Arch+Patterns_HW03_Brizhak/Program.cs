@@ -20,9 +20,9 @@ namespace GB_Arch_Patterns_HW03_Brizhak
             ShapeFactory shapeFactory = new ShapeFactory();
 
             List<IShape> shapes = new List<IShape>()
-            {  shapeFactory.CreateInstance("Square"),
+            {  shapeFactory.CreateInstance("Квадрат"),
                 shapeFactory.CreateInstance("Joker"),
-                shapeFactory.CreateInstance("Circle"),
+                shapeFactory.CreateInstance("Круг"),
                 shapeFactory.CreateInstance("Rectangle")
             };
 
