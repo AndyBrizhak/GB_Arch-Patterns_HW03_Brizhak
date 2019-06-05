@@ -9,10 +9,17 @@ namespace GB_Arch_Patterns_HW03_Brizhak
 {
    public class ShapeFactory
     {
+        /// <summary>
+        /// список-словарь производных типов IShape
+        /// </summary>
         Dictionary<string, Type> shapes;
 
         public ShapeFactory() => LoadTypes();
 
+        /// <summary>
+        /// Загрузк списка производных типов от IShape из сборки
+        /// c использованием методов System.Reflection
+        /// </summary>
         private void LoadTypes()
         {
             shapes = new Dictionary<string, Type>();
@@ -30,6 +37,12 @@ namespace GB_Arch_Patterns_HW03_Brizhak
             }
         }
 
+        /// <summary>
+        /// Создание обьекта заданного типа,
+        /// с помощью методов System.Reflection
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public IShape CreateInstance(string name)
         {
             Type t = GetTypeToCreate(name);
@@ -39,6 +52,11 @@ namespace GB_Arch_Patterns_HW03_Brizhak
                 Activator.CreateInstance(t) as IShape;
         }
 
+        /// <summary>
+        /// Получение типа объекта, который нужно создать
+        /// </summary>
+        /// <param name="shapeType">Имя типа</param>
+        /// <returns></returns>
         private Type GetTypeToCreate(string shapeType)
         {
             foreach (var shape in shapes)
