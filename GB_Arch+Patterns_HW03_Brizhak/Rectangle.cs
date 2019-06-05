@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW03_Brizhak
 {
-   public class Rectangle : Shape
+   public class Rectangle : IShape
     {
-        public virtual int Width { get; set; }
-        public virtual int Height { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public string Name => "Прямоугольник";
 
         public Rectangle()
         {
         }
 
-        public override double CalculateArea() => Width * Height;
+        public  double CalculateArea() => Width * Height;
         
-        public override double CalculatePerimeter() => (Width + Height)*2;
+        public  double CalculatePerimeter() => (Width + Height)*2;
         
     }
 }
