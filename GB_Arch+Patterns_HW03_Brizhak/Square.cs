@@ -10,7 +10,7 @@ namespace GB_Arch_Patterns_HW03_Brizhak
     {
         public int Side { get; set; }
 
-        public override double CalculateArea() => System.Math.Pow(Side, 2);
+        public override double CalculateArea() => Math.Pow(Side, 2);
 
         public override double CalculatePerimeter() => Side*4;
         
