@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GB_Arch_Patterns_HW03_Brizhak
+﻿namespace GB_Arch_Patterns_HW03_Brizhak
 {
-   /// <summary>
-   /// Геометрическая форма - прямоугольник
-   /// </summary>
-   public class Rectangle : IShape
+    /// <summary>
+    /// Геометрическая форма - прямоугольник
+    /// </summary>
+    public class Rectangle : IShape
     {
         public int Width { get; set; }
         public int Height { get; set; }

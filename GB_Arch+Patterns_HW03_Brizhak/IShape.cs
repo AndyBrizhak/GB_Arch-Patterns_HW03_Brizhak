@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GB_Arch_Patterns_HW03_Brizhak
+﻿namespace GB_Arch_Patterns_HW03_Brizhak
 {
-   /// <summary>
-   /// Интерфейс для описания полей и методов
-   /// геометрических форм
-   /// </summary>
-   public interface IShape
+    /// <summary>
+    /// Интерфейс для описания полей и методов
+    /// геометрических форм
+    /// </summary>
+    public interface IShape
     {
         /// <summary>
         /// Название геометрической формы
