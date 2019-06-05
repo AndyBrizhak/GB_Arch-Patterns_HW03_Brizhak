@@ -48,6 +48,7 @@
     <Compile Include="Rectangle.cs" />
     <Compile Include="Shape.cs" />
     <Compile Include="Square.cs" />
+    <Compile Include="Сircle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

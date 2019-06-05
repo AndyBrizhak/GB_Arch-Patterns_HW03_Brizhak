@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW03_Brizhak
 {
-    class Rectangle : Shape
+   public class Rectangle : Shape
     {
         public virtual int Width { get; set; }
         public virtual int Height { get; set; }

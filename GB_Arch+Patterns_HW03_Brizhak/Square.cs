@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW03_Brizhak
 {
-    class Square : Shape
+   public class Square : Shape
     {
         public int Side { get; set; }
 
