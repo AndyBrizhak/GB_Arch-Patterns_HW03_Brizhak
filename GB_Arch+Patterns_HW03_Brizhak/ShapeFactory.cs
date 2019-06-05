@@ -29,6 +29,27 @@ namespace GB_Arch_Patterns_HW03_Brizhak
                 }
             }
         }
+
+        public IShape CreateInstance(string name)
+        {
+            Type t = GetTypeToCreate(name);
+
+            return t == null ?
+                new UnknownShape() :
+                Activator.CreateInstance(t) as IShape;
+        }
+
+        private Type GetTypeToCreate(string shapeType)
+        {
+            foreach (var shape in shapes)
+            {
+                if (shape.Key.Contains(shapeType))
+                {
+                    return shapes[shape.Key];
+                }
+            }
+            return null;
+        }
     }
 
     
