@@ -4,6 +4,9 @@ using System.Reflection;
 
 namespace GB_Arch_Patterns_HW03_Brizhak
 {
+    /// <summary>
+    /// Фабрика геометрических фигур
+    /// </summary>
     public class ShapeFactory
     {
         /// <summary>

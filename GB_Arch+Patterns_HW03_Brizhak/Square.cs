@@ -2,6 +2,9 @@
 
 namespace GB_Arch_Patterns_HW03_Brizhak
 {
+    /// <summary>
+    /// Геометрическая фигура - квадрат
+    /// </summary>
     public class Square : Shape
     {
         public double Side { get; set; }
